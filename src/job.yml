@@ -2,14 +2,15 @@ $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: model
 command: >-
   python 
-  --
-  --
+  -- reg_rate ${{inputs.reg_rate}}
+  -- data-dir ${{inputs.training_data}}
 inputs:
   training_data: 
-    type: uri_folder 
-    path: azureml://datastores/workspaceblobstore/paths/diabetes-dev-folder/
+    type: uri_folder
+    path: azureml:diabetes-dev-folder
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: 
 experiment_name: 
 description: 
+#https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-job-command?view=azureml-api-2
