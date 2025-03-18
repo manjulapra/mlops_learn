@@ -14,3 +14,4 @@ compute: azureml:manjulapra1
 experiment_name: mslean-diabetes-test
 description: mslearn-dieabetes-test
 #https://learn.microsoft.com/en-us/azure/machine-learning/reference-yaml-job-command?view=azureml-api-2
+#https://techcommunity.microsoft.com/discussions/azure/sign-in-to-azure-devops/3714105
